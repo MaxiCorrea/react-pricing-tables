@@ -1,5 +1,9 @@
 import * as React from "react";
 
-export const TableButton: React.FC = () => {
-  return <></>;
+interface TableButtonProps {
+  caption: string;
+}
+
+export const TableButton: React.FC<TableButtonProps> = (props) => {
+  return <a href={"#"}> {props.caption}</a>;
 };

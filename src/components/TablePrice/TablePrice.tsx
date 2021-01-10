@@ -7,7 +7,8 @@ interface TablePriceProps {
 export const TablePrice: React.FC<TablePriceProps> = (props) => {
   return (
     <h4>
-      <small>{"$" + props.price}</small>
+      <small>{"$"}</small>
+      {props.price}
     </h4>
   );
 };
