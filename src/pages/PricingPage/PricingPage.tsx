@@ -12,11 +12,11 @@ import { TableWrap } from "../../components/TableWrap/TableWrap";
 export const PricingPage: React.FC = () => {
   return (
     <>
-      <Header title={"Pricing Tables"} subtitle={"subtitle"} />
+      <Header title={"Pricing Tables"} subtitle={"My services"} />
       <TableSection>
         <TableWrap>
           <Table>
-            <TableHeader title={"Basic"} color={"basic"}/>
+            <TableHeader title={"Basic"} color={"basic"} />
             <TableItems>
               <TableItem text={"50 Emails"} />
               <TableItem text={"5GB Disk Space"} />
@@ -24,11 +24,15 @@ export const PricingPage: React.FC = () => {
               <TableItem text={"Unlimited Domains"} />
             </TableItems>
             <TablePrice price={124} />
-            <TableButton caption={"Purcharse"} />
+            <TableButton
+              href={window.location.toString()}
+              caption={"Purcharse"}
+              color={"basic"}
+            />
           </Table>
 
           <Table>
-            <TableHeader title={"Enterprice"} color={"enterprice"}/>
+            <TableHeader title={"Enterprice"} color={"enterprice"} />
             <TableItems>
               <TableItem text={"50 Emails"} />
               <TableItem text={"5GB Disk Space"} />
@@ -36,11 +40,15 @@ export const PricingPage: React.FC = () => {
               <TableItem text={"Unlimited Domains"} />
             </TableItems>
             <TablePrice price={124} />
-            <TableButton caption={"Purcharse"} />
+            <TableButton
+              href={window.location.toString()}
+              caption={"Purcharse"}
+              color={"enterprice"}
+            />
           </Table>
 
           <Table>
-            <TableHeader title={"Standard"} color={"standard"}/>
+            <TableHeader title={"Standard"} color={"standard"} />
             <TableItems>
               <TableItem text={"50 Emails"} />
               <TableItem text={"5GB Disk Space"} />
@@ -48,7 +56,11 @@ export const PricingPage: React.FC = () => {
               <TableItem text={"Unlimited Domains"} />
             </TableItems>
             <TablePrice price={124} />
-            <TableButton caption={"Purcharse"} />
+            <TableButton
+              href={window.location.toString()}
+              caption={"Purcharse"}
+              color={"standard"}
+            />
           </Table>
         </TableWrap>
       </TableSection>

@@ -1,5 +1,9 @@
 import { createUseStyles } from "react-jss";
 
-const useTableItemsStyles = createUseStyles({
-  root: {},
+export const useTableItemsStyles = createUseStyles({
+  root: {
+    listStyleType : "none",
+    padding : "25px",
+    margin : 0,
+  },
 })
