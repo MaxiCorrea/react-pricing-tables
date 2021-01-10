@@ -12,11 +12,11 @@ import { TableWrap } from "../../components/TableWrap/TableWrap";
 export const PricingPage: React.FC = () => {
   return (
     <>
-      <Header title={"Title"} subtitle={"subtitle"} />
+      <Header title={"Pricing Tables"} subtitle={"subtitle"} />
       <TableSection>
         <TableWrap>
           <Table>
-            <TableHeader title={"Basic"} />
+            <TableHeader title={"Basic"} color={"basic"}/>
             <TableItems>
               <TableItem text={"50 Emails"} />
               <TableItem text={"5GB Disk Space"} />
@@ -28,7 +28,7 @@ export const PricingPage: React.FC = () => {
           </Table>
 
           <Table>
-            <TableHeader title={"Basic"} />
+            <TableHeader title={"Enterprice"} color={"enterprice"}/>
             <TableItems>
               <TableItem text={"50 Emails"} />
               <TableItem text={"5GB Disk Space"} />
@@ -40,7 +40,7 @@ export const PricingPage: React.FC = () => {
           </Table>
 
           <Table>
-            <TableHeader title={"Basic"} />
+            <TableHeader title={"Standard"} color={"standard"}/>
             <TableItems>
               <TableItem text={"50 Emails"} />
               <TableItem text={"5GB Disk Space"} />
