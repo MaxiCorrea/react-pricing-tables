@@ -1,9 +1,9 @@
 import * as React from "react";
 
-interface TableProps {
+interface TableWrapProps {
   children? : React.ReactNode;
 }
 
-export const Table: React.FC<TableProps> = (props) => {
+export const TableWrap: React.FC<TableWrapProps> = (props) => {
   return <div>{props.children}</div>;
 };

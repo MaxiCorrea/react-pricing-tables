@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export const Button: React.FC = () => {
+export const TableButton: React.FC = () => {
   return <></>;
 };
