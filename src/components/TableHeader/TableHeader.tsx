@@ -1,11 +1,10 @@
 import * as React from "react";
+import { ColorType } from "../../domains/ColorType";
 import { useTableHeaderStyles } from "./TableHeader.styles";
-
-type colorType = "basic" | "enterprice" | "standard";
 
 interface TableHeaderProps {
   title: string;
-  color: colorType;
+  color: ColorType;
 }
 
 export const TableHeader: React.FC<TableHeaderProps> = (props) => {
