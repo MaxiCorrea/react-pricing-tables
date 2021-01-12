@@ -1,10 +1,10 @@
 import * as React from "react";
-import { ColorType } from "../../domains/ColorType";
+import { Color } from "../../domains/Color";
 import { useTableButtonStyles } from "./TableButton.styles";
 
 interface TableButtonProps {
   caption: string;
-  color: ColorType;
+  color: Color;
   href : string;
 }
 

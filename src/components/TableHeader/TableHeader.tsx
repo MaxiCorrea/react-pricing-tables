@@ -1,10 +1,10 @@
 import * as React from "react";
-import { ColorType } from "../../domains/ColorType";
+import { Color } from "../../domains/Color";
 import { useTableHeaderStyles } from "./TableHeader.styles";
 
 interface TableHeaderProps {
   title: string;
-  color: ColorType;
+  color: Color;
 }
 
 export const TableHeader: React.FC<TableHeaderProps> = (props) => {
