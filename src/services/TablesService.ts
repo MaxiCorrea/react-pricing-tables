@@ -11,8 +11,8 @@ export class TablesService {
       color: "basic",
     };
     const h2Args: IHeader = {
-      title: "Enterprice",
-      color: "enterprice",
+      title: "Enterprise",
+      color: "enterprise",
     };
     const h3Args: IHeader = {
       title: "Standard",
@@ -41,7 +41,7 @@ export class TablesService {
     };
     const button2: IButton = {
       caption: "Purcharse",
-      color: "enterprice",
+      color: "enterprise",
       href: window.location.toString(),
     };
     const button3: IButton = {
