@@ -9,7 +9,7 @@ export const useTableHeaderStyles = createUseStyles({
     borderTopRightRadius : "4px",
     backgroundColor : "#eb4d4b"
   },
-  enterprice : {
+  enterprise : {
     fontFamily:"Rubik",
     fontSize : "30px",
     padding : "20px",
