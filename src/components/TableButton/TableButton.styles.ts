@@ -15,7 +15,7 @@ export const useTableButtonStyles = createUseStyles({
       backgroundColor : "#78b25f",
     },
   },
-  enterprice : {
+  enterprise : {
     fontFamily:"Rubik",
     textDecoration : "none",
     display : "block",

@@ -16,8 +16,8 @@ export const TableButton: React.FC<TableButtonProps> = (props) => {
       className={
         props.color === "basic"
           ? classes.basic
-          : props.color === "enterprice"
-          ? classes.enterprice
+          : props.color === "enterprise"
+          ? classes.enterprise
           : classes.standard
       }
     >
