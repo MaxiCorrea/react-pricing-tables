@@ -9,7 +9,7 @@ export const loadTablesAction: ActionCreator<ThunkAction<
   ITablesState,
   null,
   TablesActions
->> = (token: string) => {
+>> = () => {
   return async (dispatch: Dispatch) => {
     dispatch({ type: TablesTypes.LOADING });
     setTimeout(function() {
