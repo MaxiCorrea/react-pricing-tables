@@ -1,24 +1,25 @@
-import { Button } from "./Button";
-import { Header } from "./Header";
+import { Color } from "./Color";
 import { Item } from "./Item";
-import { Price } from "./Price";
 
 export interface ITable {
-  header: Header;
+  title: string;
+  color: Color;
   items: Item[];
-  price: Price;
-  button: Button;
+  price: number;
+  url: string;
 }
 
 export class Table {
-  header: Header;
+  title: string;
+  color: Color;
   items: Item[];
-  price: Price;
-  button: Button;
+  price: number;
+  url: string;
   constructor(args: ITable) {
-    this.header = args.header;
+    this.title = args.title;
+    this.color = args.color;
     this.items = args.items;
     this.price = args.price;
-    this.button = args.button;
+    this.url = args.url;
   }
 }

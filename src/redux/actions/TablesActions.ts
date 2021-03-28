@@ -12,19 +12,15 @@ export const loadTablesAction: ActionCreator<ThunkAction<
 >> = () => {
   return async (dispatch: Dispatch) => {
     dispatch({ type: TablesTypes.LOADING });
-    setTimeout(function() {
-      TablesService.getTables().then((tables) => {
-        if (tables.length > 0) {
-          dispatch({
-            type: TablesTypes.SUCCESS,
-            payload: tables,
-          });
-        } else {
-          dispatch({ type: TablesTypes.ERROR });
-        }
-      });
-    }, 3500);
+    TablesService.getTables().then((tables) => {
+      if (tables.length > 0) {
+        dispatch({
+          type: TablesTypes.SUCCESS,
+          payload: tables,
+        });
+      } else {
+        dispatch({ type: TablesTypes.ERROR });
+      }
+    });
   };
 };
-
-

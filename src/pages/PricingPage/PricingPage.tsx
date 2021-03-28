@@ -24,19 +24,19 @@ export const PricingPage: React.FC = () => {
               {tables.rows.map((table, key) => (
                 <Table key={key}>
                   <TableHeader
-                    title={table.header.title}
-                    color={table.header.color}
+                    title={table.title}
+                    color={table.color}
                   />
                   <TableItems>
                     {table.items.map((item, key) => (
                       <TableItem text={item.text} key={key} />
                     ))}
                   </TableItems>
-                  <TablePrice price={table.price.value} />
+                  <TablePrice price={table.price} />
                   <TableButton
-                    href={table.button.href}
-                    caption={table.button.caption}
-                    color={table.button.color}
+                    href={table.url}
+                    caption={"Purcharse"}
+                    color={table.color}
                   />
                 </Table>
               ))}
