@@ -4,7 +4,7 @@ import { Table } from "../domains/Table";
 export class TablesService {
   static async getTables(): Promise<Table[]> {
     return axios
-      .get(``)
+      .get("https://java-pricing-tables-api.herokuapp.com/tables")
       .then((res) => {
         const { data } = res;
         return data;
