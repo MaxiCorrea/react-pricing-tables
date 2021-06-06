@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/react-pricing-tables/static/js/main.276826b0.chunk.js",
-    "main.js.map": "/react-pricing-tables/static/js/main.276826b0.chunk.js.map",
+    "main.js": "/react-pricing-tables/static/js/main.e067a13b.chunk.js",
+    "main.js.map": "/react-pricing-tables/static/js/main.e067a13b.chunk.js.map",
     "runtime-main.js": "/react-pricing-tables/static/js/runtime-main.9fea2026.js",
     "runtime-main.js.map": "/react-pricing-tables/static/js/runtime-main.9fea2026.js.map",
     "static/js/2.e90ea78a.chunk.js": "/react-pricing-tables/static/js/2.e90ea78a.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.9fea2026.js",
     "static/js/2.e90ea78a.chunk.js",
-    "static/js/main.276826b0.chunk.js"
+    "static/js/main.e067a13b.chunk.js"
   ]
 }
