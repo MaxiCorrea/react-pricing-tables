@@ -7,16 +7,21 @@ import { ITablesState } from "../redux/reducers/TablesReducer";
 import { IApplicationState } from "../redux/store/Store";
 
 export const Application: React.FC = () => {
-  const tables = useSelector<IApplicationState, ITablesState>((s) => s.tables);
-  const dispath = useDispatch();
+
+  const tablesState = useSelector<
+    IApplicationState, 
+    ITablesState
+  >((state) => state.tables);
+
+  const dispatch = useDispatch();
 
   React.useEffect(() => {
-    dispath(loadTablesAction());
-  }, [dispath]);
+    dispatch(loadTablesAction());
+  }, [dispatch]);
 
-  return tables.loading ? (
-    <Spinner/>
-  ) : tables.error ? (
+  return tablesState.loading ? (
+    <Spinner />
+  ) : tablesState.error ? (
     <>{"Error"}</>
   ) : (
     <PricingPage />
